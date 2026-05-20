@@ -70,7 +70,6 @@ always @(posedge clk or negedge rst_n) begin
                 if (i_valid) begin
                     shift_reg <= i_data;
                     state     <= START;
-                    baud_cnt  <= 0; // reset baud counter on start
                 end
             end
 
